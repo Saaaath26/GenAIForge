@@ -66,7 +66,7 @@ export const papersAPI = {
 // Chat API
 export const chatAPI = {
   sendMessage: async (message: string) => {
-    const response = await api.post('/chat/chat', { content: message });
+    const response = await api.post('/chat', { content: message });
     return response.data;
   },
 };
